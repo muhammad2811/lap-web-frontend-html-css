@@ -1,0 +1,38 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Collage Laboratories">
+        <title>report problems</title>
+    </head>
+    <link rel="stylesheet" href="style/nav style.css">
+
+    <body>
+        <nav class="NAV" id="MyNAV">
+
+            <a href="index.html">Home</a>
+            <a href="add lab.html">Add Lab</a>
+            <a href="add PCs.html">Add PCS</a>
+            <a href="edit.html">Update</a>
+            <a href="under maintenance.html">Maintenance</a>
+            <a href="search.html">Search</a>
+            <a href="report problem.html" class="active">Report problems</a>
+        </nav>
+        <h1>Report a Problem</h1>
+        <form>
+            <p>ID Laboratory</p>
+            <input type="number" name="ID" min=1><br>
+            <p>Number of PC that needs a repair</p>
+            <input type="number" name="Number of PC that needs a repair" min=0><br>
+            <p>Description of problem</p>
+            <textarea cols="20" rows="4"></textarea><br>
+            <p>Problem type</p>
+            <input type="radio" name="Problem type">Software problem <br>
+            <input type="radio" name="Problem type">Hardware problem <br>
+            <p>Date of occurrence</p>
+            <input type="date" name="Date of occurrence"><br>
+            <input type="submit" value="send"><br>
+        </form>
+    </body>
+
+</html>

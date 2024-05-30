@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Adding PC</title>
+  </head>
+  <link rel="stylesheet" href="style/nav style.css">
+
+  <body>
+    <nav class="NAV" id="MyNAV">
+
+      <a href="index.html">Home</a>
+      <a href="add lab.html">Add Lab</a>
+      <a href="add PCs.html" class="active">Add PCS</a>
+      <a href="edit.html">Update</a>
+      <a href="under maintenance.html">Maintenance</a>
+      <a href="search.html">Search</a>
+      <a href="report problem.html">Report problems</a>
+    </nav>
+
+    <h1>Adding pc</h1>
+    <main>
+      <p>Please enter the information of the pc you want to add</p>
+      <section>
+        <form method="post">
+          <div>
+            <label for="pc id">PC id: </label>
+            <input type="number" id="pc id" required placeholder="ex:202000">
+          </div>
+          <br>
+          <div>
+            <label for="lab id">lab id: </label>
+            <input type="number" id="lab id" required placeholder="ex:202000">
+          </div>
+          <br>
+          <div>
+            <label for="st">Status: </label>
+            <select name="Status" id="st">
+              <option value="good">work</option>
+              <option value="bad">needs maintenance</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <input type="submit" name="" value="Add">
+            <input type="reset" name="" value="clear">
+          </div>
+
+        </form>
+      </section>
+    </main>
+
+  </body>
+
+</html>

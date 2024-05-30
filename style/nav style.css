@@ -1,0 +1,59 @@
+.NAV {
+    /*لون خلفية البار*/
+    background-color: #57f594;
+    overflow: hidden;
+}
+
+.NAV A {
+    /*مكان الكلام*/
+    float: left;
+    /*لون كلام اللي في البار*/
+    color: rgb(0, 0, 0);
+    padding: 16px 20px;
+    font-size: 20px;
+    text-decoration: solid;
+}
+
+.NAV A.active {
+    /*لون البوتون المختار حاليا*/
+    background-color: #0992057a;
+    color: rgb(0, 0, 0);
+}
+
+.NAV A:hover {
+    /*لون البوتون لما احط الماوس عليه*/
+    background-color: #0992057a;
+    /*لون الكلام اللي فالبوتون لما احط الماوس عليه*/
+    color: black;
+}
+
+.NAV A.active {
+    /*لون البوتون المختار حاليا*/
+    background-color: #0992057a;
+    color: black;
+}
+#us {
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(42, 121, 5);
+}   
+
+footer {
+    height: 200px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.883);
+    color: rgb(42, 121, 5);
+    margin: -7px;
+    font-size: 20px;
+
+}
+div.main {
+    width: 100%;
+    height: 550px;
+    margin: 0px -5px;
+}
+div.main img {
+    width: 1350px;
+    height: 550px;
+
+}

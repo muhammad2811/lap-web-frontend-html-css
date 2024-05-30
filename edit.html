@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Collage Laboratories">
+        <title>edit data</title>
+
+    </head>
+    <link rel="stylesheet" href="style/nav style.css">
+
+    <body>
+
+        <nav class="NAV" id="MyNAV">
+
+            <a href="index.html">Home</a>
+            <a href="add lab.html">Add Lab</a>
+            <a href="add PCs.html">Add PCS</a>
+            <a href="edit.html" class="active">Update</a>
+            <a href="under maintenance.html">Maintenance</a>
+            <a href="search.html">Search</a>
+            <a href="report problem.html">Report problems</a>
+        </nav>
+
+        <h1>Update lab data</h1>
+        <!--<p>enter name of lab :
+            <input type="search" onfocus="this.value='' " value="Search by name">
+
+            <img height="20" src="style/search.jpg" />
+        </p>-->
+        <form method="post">
+            <label>Lab ID</label><br>
+            <input type="number" name="ID"><br>
+            <label>Lab Name</label><br>
+            <input type="text" name="Name" placeholder="Enter new name"><br>
+            <label>Number of PCs</label><br>
+            <input type="number" name="Number of PCs" min="1" placeholder="Enter new data"><br>
+            <label>Capacity</label><br>
+            <input type="number" name="Capacity" min="1" placeholder="Enter new data"><br>
+            <label>Number of chairs</label><br>
+            <input type="number" name="Number of chairs" min="1" placeholder="Enter new data"><br><br>
+            <label class="a">Laboratory status</label><br>
+            <input type="radio" name="Status" value="active">active<br>
+            <input type="radio" name="Status" value="under maintenance">under maintenance<br><br>
+            <input type="submit" value="Save">
+        </form>
+        <br><br>
+        <p>Do you want delet data of lab ?</p>
+        <script>
+            function confimation() {
+                let text = "Press a button!\nEither Confirm or Cancel.";
+                if (confirm(text) == true) {
+                    text = "You pressed Confirm!";
+                }
+                else {
+                    text = "You canceled!";
+                }
+
+            }
+        </script>
+        <button onclick="confimation()">
+            Delete
+
+        </button>
+    </body>
+
+</html>
